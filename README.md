@@ -1,11 +1,16 @@
 # IDE
 > Visual Studio
 
-# THƯ VIỆN CẨN CÓ (BẮT BUỘC)
+# THƯ VIỆN CẦN CÓ (BẮT BUỘC)
 ```
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+```
+
+# BIẾN TOÀN CỤC
+```
+const int SZIE_ARRAY_STRING = 100;
 ```
 
 # NHỮNG HÀM ĐÃ ĐƯỢC XÂY DỰNG
@@ -77,4 +82,79 @@ Lưu ý: độ dài chuỗi mặc định trong mảng là SZIE_ARRAY_STRING = 1
 Ví dụ:
     char test[70][100];
     emptyArrStr(test, 70);
+```
+
+### *Hàm lenArrStr*
+```
+Tác dụng: trả về kích thước của mảng chuỗi
+Cách dùng:
+    - dùng hàm emptyArrStr
+    - sau đó mới dùng lenArrStr(mảng chuỗi);
+Lưu ý: độ dài chuỗi mặc định trong mảng là SZIE_ARRAY_STRING = 100;
+Ví dụ:
+    char test[70][100];
+    emptyArrStr(result, 70);
+    test[0] <-- "text1"
+    test[1] <-- "text2"
+    test[2] <-- "text3"
+    printf("lenght: %d", lenArrStr(test)); --> length: 3
+```
+
+### *Hàm strFind*
+```
+Tác dụng: trả về vị trí đầu tiền của chuỗi s2 trong chuỗi s1
+Cách dùng: strFind(chuỗi s1, chuỗi s2);
+Ví dụ:
+    char s1[]="tackecon";
+    char s2[]="ke";
+    printf("Vị trí: %d", strFind(s1, s2)) --> Vị trí: 3
+```
+
+### *Hàm strSlice*
+```
+Tác dụng: cắt và gán chuỗi s1 cho chuỗi s2
+Cách dùng: strSlice(s2, s1, start, end);
+Lưu ý:
+    - start : vị trí bắt đầu
+    - end : vị trí kết thúc
+Ví dụ:
+    char s1[]="tackecon";
+    char s2[100];
+    strSlice(s2, s1, 2, 4);
+    printf("s2: %s", s2); --> s2: cke
+```
+
+### *Hàm strSerial*
+```
+Tác dụng: nối chuỗi s1 và chuỗi s2 và gán cho chuỗi s3
+Cách dùng: strSlice(s3, s1, s2);
+Lưu ý: kích thước của chuỗi s3 > độ dài thực của chuỗi s1 + độ dài thực của chuỗi s2
+Ví dụ:
+    char s1[100];
+    s1 = "tacke"; --> độ dài thực của chuỗi s1 là 5
+    char s2[100];
+    s2 = "con"; --> dộ dài thực của chuỗi s2 là 3
+    char s3[100]; --> kích thước của chuỗi s1 là 100 > 5 + 3
+    strSerial(s3, s1, s2);
+    printf("ss: %s", s3); --> s3: tackecon
+```
+
+### *Hàm strSplit*
+```
+Tác dụng: tách chuỗi s1 thành các chuỗi con theo chuỗi s2 và gán các chuỗi con vào mảng chuỗi arrayStr
+Cách dùng:
+    - dùng hàm emptyArrStr
+    - strSplit(arrayStr, s1, s2);
+Lưu ý: kích thước của chuỗi s3 > độ dài thực của chuỗi s1 + độ dài thực của chuỗi s2
+Ví dụ:
+    char array[100][100];
+    emptyArrStr(array, 100); --> khởi tạo mảng rỗng cho mảng chuỗi
+    char str[] = "tackecon";
+    char text[] = "ke";
+
+    strSplit(array, str, text);
+
+    for (int i = 0; i < lenArrStr(array); i++) { --> in các giá trị có trong mảng chuỗi
+        printf("%s\n", array[i]);
+    }
 ```
