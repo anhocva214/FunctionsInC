@@ -10,9 +10,9 @@
 
 # NHỮNG HÀM ĐÃ ĐƯỢC XÂY DỰNG
 
-> Mảng:
+> ## Mảng:
 
-## *Hàm createArray1D_1*
+### *Hàm createArray1D_1*
 ```
 Tác dụng: trả về mảng 1 chiều với kích thước cho trước.
 Cách dùng: createArray1D_1(kích thước mảng);
@@ -26,7 +26,7 @@ Ví dụ:
     free(arr);
 ```
 
-## *Hàm createArray1D_2*
+### *Hàm createArray1D_2*
 ```
 Tác dụng: trả về mảng 1 chiều với kích thước là giá trị của array[0].
 Cách dùng: createArray1D_2();
@@ -43,7 +43,7 @@ Ví dụ:
     free(arrStr);
 ```
 
-## *Hàm printfArray*
+### *Hàm printfArray*
 ```
 Tác dụng: in mảng 1 chiều (int) theo vị trí bắt đầu
 Cách dùng: printArray(mảng cần in, kích thước mảng, vị trí bắt đầu);
@@ -52,7 +52,7 @@ Ví dụ:
 	printArray(arr, 5, 0);
 ```
 
-## *Hàm arraySort*
+### *Hàm arraySort*
 ```
 Tác dụng: sắp xếp tăng hoặc giảm mảng 1 chiều ứng với cách tạo mảng 
 Cách dùng:
@@ -67,9 +67,9 @@ Ví dụ:
 	printArray(arr, 5, 0);
 ```
 
-> Chuỗi:
+> ## Chuỗi:
 
-## *Hàm emptyArrStr*
+### *Hàm emptyArrStr*
 ```
 Tác dụng: dùng để khởi tạo các giá trị rỗng cho mảng chuỗi.
 Cách dùng: emptyArrStr(mảng chuỗi, kích thước mảng);
