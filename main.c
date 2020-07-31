@@ -201,7 +201,7 @@ int main() {
 	  Tác dụng: trả về mảng 1 chiều với kích thước là giá trị của array[0].
 	  Cách dùng: createArray1D_2();
 	  Lưu ý: 
-			- dùng hàm fre( biến ) để giải phóng vùng nhớ (quan trọng)
+			- dùng hàm free( biến ) để giải phóng vùng nhớ (quan trọng)
 			- SZIE_ARRAY_STRING = 100 (mặc định có thê chỉnh sửa)
 	  Ví dụ:
 			int* arrStr;
@@ -217,7 +217,7 @@ int main() {
 	  Hàm createArray1D_1
 	  Tác dụng: trả về mảng 1 chiều với kích thước cho trước.
 	  Cách dùng: createArray1D_1(kích thước mảng);
-	  Lưu ý: dùng hàm fre( biến ) để giải phóng vùng nhớ (quan trọng)
+	  Lưu ý: dùng hàm free( biến ) để giải phóng vùng nhớ (quan trọng)
 	  Ví dụ:
 			int* arr;
 			arr = createArray1D_1(2);
