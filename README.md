@@ -15,7 +15,7 @@ const int SZIE_ARRAY_STRING = 100;
 
 # NHỮNG HÀM ĐÃ ĐƯỢC XÂY DỰNG
 
-> ## Mảng:
+* ## Mảng:
 
 ### *Hàm createArray1D_1*
 ```
@@ -72,7 +72,7 @@ Ví dụ:
 	printArray(arr, 5, 0);
 ```
 
-> ## Chuỗi:
+* ## Chuỗi:
 
 ### *Hàm emptyArrStr*
 ```
